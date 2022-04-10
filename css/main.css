@@ -44,6 +44,8 @@ a {
 		'footer	 		footer 		footer';
 }
 
+
+
 /* ---------- HEADER ----------*/
 .header {
 	grid-area: header;
@@ -142,6 +144,7 @@ a {
 	font-weight: 300;
 	margin-bottom: 1.25rem; 
 	color: #868b8d;
+	text-align: center;
 }
 
 
@@ -334,7 +337,7 @@ a {
 	}
 
 	.menu a {
-		padding-right: 25px;
+		padding-right: 18px;
 		color: #000;
 		display: block;
 		text-decoration: none;
@@ -368,7 +371,7 @@ a {
 		grid-template-columns: 1fr;
 	}
 	.contenedor-paisaje2{
-		width: 40.5em;
+		width: 39.5em;
 		margin:10px auto;
 		display:block;
 		height: 400px;
@@ -384,9 +387,9 @@ a {
 		grid-template-columns: 1fr;
 	}
 	.menu a {
-		padding-right: 5px;
+		padding-right: 0;
 		color: #000;
-		display: block;
+		display: inline;
 		text-decoration: none;
 		text-transform: uppercase;
 		font-weight: 500;
