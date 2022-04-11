@@ -233,6 +233,12 @@ a {
 	background: #262626;
 }
 
+
+
+.mb-3{
+	padding: 0;
+	background-color: 0;
+}
 /*---------- FOOTER ----------*/
 .contenedor .footer {
 	background: #fff;
@@ -306,8 +312,23 @@ a {
 }
 
 .fondo{
-	background-color: rgb(204, 245, 245);
-	margin-bottom: 50px;
+	background-color:  rgb(176, 222, 241);
+}
+
+.fondo h3{
+	font-size: 25px;
+	
+	background-color: grey;
+}
+
+.tamaño-imagen{
+	width: 900px;
+	height: 400px;
+	text-align: center;
+	margin:10px auto;
+	display:block;
+	border-radius: 40%;
+	
 }
 
 .contenedor-paisaje2{
