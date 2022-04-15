@@ -107,10 +107,7 @@ a {
 	width: 100%;
 }
 
-.articulo .contenedor-thumbnail {
-	width: 20%;
-	
-}
+
 
 .fondo .titulo{
 	font-size: 1.25em;
@@ -156,18 +153,6 @@ a {
 	display: grid;
 	grid-template-columns: 1.3fr 1fr;
 }
-
-.articulo.destacado .contenedor-thumbnail {
-	min-height: 500%;
-	width: 100%;
-}
-
-.articulo.destacado .contenedor-thumbnail a {
-	display: inline-block;
-	width: 500%;
-	height: 100%;
-}
-
 
 
 .destacado .titulo::after {
@@ -361,9 +346,6 @@ a {
 			height: 28em;
 	}
 	
-	.articulo.destacado .contenedor-thumbnail {
-		height: 16em;
-	}
 	.articulo.destacado {
 		grid-template-columns: 1fr;
 	}
@@ -396,9 +378,7 @@ a {
 		font-size: 1em;
 	}
 	
-	.articulo.destacado .contenedor-thumbnail {
-		height: 16em;
-	}
+	
 	.contenedor-paisaje1{
 		width: 30.5em;
 		margin:10px auto;
