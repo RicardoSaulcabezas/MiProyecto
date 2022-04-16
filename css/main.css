@@ -127,10 +127,7 @@ li a.active, li a:hover{
 	width: 100%;
 }
 
-.articulo .contenedor-thumbnail {
-	width: 20%;
-	
-}
+
 
 .fondo .titulo{
 	font-size: 1.25em;
@@ -177,18 +174,6 @@ li a.active, li a:hover{
 	display: grid;
 	grid-template-columns: 1.3fr 1fr;
 }
-
-.articulo.destacado .contenedor-thumbnail {
-	min-height: 500%;
-	width: 100%;
-}
-
-.articulo.destacado .contenedor-thumbnail a {
-	display: inline-block;
-	width: 500%;
-	height: 100%;
-}
-
 
 
 .destacado .titulo::after {
@@ -401,9 +386,6 @@ li a.active, li a:hover{
 			height: 28em;
 	}
 	
-	.articulo.destacado .contenedor-thumbnail {
-		height: 16em;
-	}
 	.articulo.destacado {
 		grid-template-columns: 1fr;
 	}
@@ -480,9 +462,7 @@ li a.active, li a:hover{
 	}
 
 	
-	.articulo.destacado .contenedor-thumbnail {
-		height: 16em;
-	}
+	
 	.contenedor-paisaje1{
 		width: 35.5em;
 		margin:10px auto;
