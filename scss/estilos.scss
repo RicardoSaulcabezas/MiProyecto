@@ -19,24 +19,39 @@ $color-principal:rgb(176, 222, 241);
         width: 29.5em;
         @include size;
         object-fit: cover;
-        display: flex; }
-    
+        display: flex; 
+		border-radius: 10px;
+	}
+	.contenedor-paisaje2{
+		height: 25em;
+		margin-left: 4px;
+		border-radius: 5px;
+		   
+	}
 
     .tamaño-imagen{
-        width: 900px;
-        height: 400px;
-        text-align: center;
+        width: 800px;
+        height: 300px;
+      ;
         margin:10px auto;
+		margin-bottom: 100px;
         display: block;
-        border-radius: map-get($map: $border, $key: border-radius);;
+        border-radius: map-get($map: $border, $key: border-radius);
+		border-style:hidden ;
+		border: #000090;
         
     }
     
+	.container{
+		padding: 1em;
+		
+	}
 
     
     .imagen3{
         width: 25em;
         height: 19em;
+		border-radius: 10px;
     }
 
     .checkbtn{
@@ -110,7 +125,7 @@ body{
 li a.active, li a:hover{
     background: #000090;
     transition: .5s;
-	padding: 7px;
+	
 }
 
 
@@ -133,6 +148,7 @@ li a.active, li a:hover{
 
 
 .articulo {
+	border-radius: 10px;
 	display: flex;
 	background: #fff;
 	@extend %shadow ;
@@ -153,7 +169,11 @@ li a.active, li a:hover{
     }
     .titulo {
         @include text ;
+		
+		display: block;
         a {
+			background-color: #cecece;
+			border-radius: 10px;
             font-weight: 400;
             color: #000;
         }
@@ -167,7 +187,7 @@ li a.active, li a:hover{
 	color: rgb(29, 27, 27);
 	background-color: $color-principal;
 	@extend %shadow ;
-
+	border-radius: 10px;
 	display: grid;
 	grid-template-columns: 1.3fr 1fr;
 }
@@ -204,6 +224,7 @@ li a.active, li a:hover{
 
 /*---------- SIDEBAR ----------*/
 .sidebar {
+	border-radius: 10px;
     padding: 5em 1.56em; 
 	text-align: center;
 	min-height: 6.25rem; 
@@ -256,13 +277,14 @@ li a.active, li a:hover{
     @include size;
 	object-fit: cover;
 	display: flex;
+	border-radius: 10px;
     &:hover{
         background: rgba(0, 103, 123, 0.6);
     }
     a{
         position: relative;
         overflow: hidden;
-        box-shadow: 0px 1px 5px rgba(0, 0, 0, 50);
+        
         cursor: pointer;
         img{
             transition: all 500ms ease-out;
@@ -271,10 +293,12 @@ li a.active, li a:hover{
         &:hover .capa{
              opacity: 1;
              visibility: visible;
+			 
         }
 
         &:hover img{
             transform: scale(1.1);
+			border-radius: 10px;
         }
 
         .capa {
@@ -289,6 +313,8 @@ li a.active, li a:hover{
             &:hover h3{
                 margin-top: 70px;
 	            margin-bottom: 15px;
+				
+				
             }
             
             h3{
@@ -314,15 +340,22 @@ li a.active, li a:hover{
 
 
 
-
-
 .fondo{
 	background-color: map-get($map: $standar, $key: bg-standar);
 
+	h2{
+        background-color: #a3c4e6;
+		display: inline;
+		border-radius: 5px;		
+	}
+
+	
+
     h3{
-        font-size: 20px;
-        
-        background-color: rgb(172, 170, 250);
+        font-size: 22px;
+		margin-top: 20px;
+		border-radius: 5px;
+		text-align: center;
     }
 
     .extracto{
@@ -338,6 +371,7 @@ li a.active, li a:hover{
         font-weight: 300;
         color: #000;
         margin-bottom: 10px;
+		
         
     }
 }
@@ -355,6 +389,8 @@ li a.active, li a:hover{
 		margin:0px auto;
 		    display:block;
 	}
+
+
 	.contenedor-paisaje1 a:hover > img {
 		transform: scale(1);
 	}
@@ -381,8 +417,9 @@ li a.active, li a:hover{
 		width: 700px;
 		height: 450px;
 		margin: -60px;
-		margin-bottom: 0;
+		margin-bottom: 50px;
 		margin-top: 0;
+		border-radius: 15px;
 	}
 
 
@@ -404,6 +441,12 @@ li a.active, li a:hover{
 		grid-template-columns: 1fr;
 	}
 	
+	.contenedor-paisaje1{
+		&:hover{
+			background: none
+		}
+	}
+
 	.contenedor-paisaje1 a:hover > img {
 		transform: scale(1);
 	}
@@ -420,6 +463,15 @@ li a.active, li a:hover{
         font-size: 16px;
 		margin-left: -18px;
     }
+	.contenedor-paisaje2{
+		height: 25em;
+		margin-left: 4px;
+		border-radius: 5px;
+		   
+	}
+
+	
+
 
 }
 
@@ -428,6 +480,7 @@ li a.active, li a:hover{
 	.checkbtn{
         display: block;
     }
+	
 	.barra-navegacion{
         position:fixed;
         width: 100%;
@@ -463,6 +516,7 @@ li a.active, li a:hover{
 		margin-bottom: 20px;
 		margin-top: 0;
 		margin-left: -10px;
+		border-radius: 15px;
 	}
 
 
@@ -483,7 +537,13 @@ li a.active, li a:hover{
 	.articulo.destacado {
 		grid-template-columns: 1fr;
 	}
-	
+
+	.contenedor-paisaje1{
+		&:hover{
+			background: none
+		}
+	}
+
 	.contenedor-paisaje1 a:hover > img {
 		transform: scale(1);
 	}
@@ -513,14 +573,7 @@ li a.active, li a:hover{
 	}
 
 	
-	.img-1{
-		width: 470px;
-		height: 300px;
-		margin: -60px;
-		margin-bottom: 20px;
-		margin-top: 0;
-		margin-left: -30px;
-	}
+	
 
 
 	.contenedor {
@@ -536,9 +589,24 @@ li a.active, li a:hover{
 		width: 15em;
 		height: 15em;
 	}
+
+	.img-1{
+		width: 470px;
+		height: 300px;
+		margin: -60px;
+		margin-bottom: 20px;
+		margin-top: 0;
+		margin-left: -30px;
+	}
 	
 	.articulo.destacado {
 		grid-template-columns: 1fr;
+	}
+
+	.contenedor-paisaje1{
+			&:hover{
+				background: none
+			}
 	}
 	
 	.contenedor-paisaje1 a:hover > img {
@@ -557,6 +625,13 @@ li a.active, li a:hover{
         font-size: 16px;
 		margin-left: -18px;
     }
+
+	.contenedor-paisaje2{
+		height: 25em;
+		margin-left: 4px;
+		border-radius: 5px;
+		   
+	}
 	
 
 }
@@ -567,17 +642,26 @@ li a.active, li a:hover{
 		font-size: 12px;
 	}
 	.contenedor-paisaje1{
+		
 		width: 30em;
 		height: 20em;
-		margin-left:60px ;
+	
+		overflow: hidden;
 		    display:block;
+			&:hover{
+				background: none
+			}
 	}
 	
-
-	.contenedor-paisaje2{
-		width: 39em;
-		margin-left: 4px;
-		   
+	.boton-bs{
+		margin-bottom: 40px;
+	}
+	.boton-right{
+		margin:0;
+	}
+	.boton-left{
+	margin: 0;
+	
 	}
 	
 
@@ -602,75 +686,80 @@ li a.active, li a:hover{
 		visibility:hidden;
 	} 
 
-	.articulo.destacado {
-		padding-right: 37.5em;
-		padding-bottom: 10px;
-		margin-left: 20px;
-	}
+	
 
 	.articulo .extracto {
 		font-size: 1.25em; 
 		line-height: 1.5625rem; 
 		font-weight: 300; 
 		color: #868b8d;
-		margin-right: 150px;
-	}
-	.boton-right{
-		margin-right: 270px ;
-		margin-bottom: 15px;
-		display: block;
+	
+		
+		
 	}
 
-	.boton-left{
-		margin-left: -10px ;
-		margin-bottom: -3px;
-		display:block;
-	}
-	.boton-bs{
-		display: block;
-		margin-left: 190px;
-	}
+
+	
 	.articulo .contenedor-texto {
-		padding: 0em;
+		padding: 1em;
 		width: 50%;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 		width: 100%;
-		margin-right: 0em;
+		
 		margin: 0;
 		display: block;
 	}
 
 	 .imagen3{
-		 height: 20em;
+		 height: 19em;
 		width: 15em;
 		text-align: start;
 		display: block;
 		margin: 0px;
+		
+		padding: 0em;
 	}
 	
-	.articulo{
-		margin-left: -80px;
-		padding-right: -850px;
+	
+	.img-1{
+		width: 285px;
+		height: 200px;
+		text-align: justify;
+		margin: 0;
+		margin-right: 10px;
+		margin-left: 10px;
 		
 	}
 	
+	.articulo.destacado {
+		grid-template-columns: 1fr;
+		margin-left: 10px;
+		
+	}
 	.extracto-destacado{
-		font-size: 1.25em; 
-		line-height: 1.5625rem; 
+		
+		font-size: 1.25em;
+		margin-right: 60px;
+		margin-left: 20px;
 		font-weight: 300; 
 		color: #868b8d;
-		margin-left: 10px;
-	}
-	.img-1{
-		width: 30.5em;
-		height: 18em;
-		object-fit: cover;
-		display: flex; 
-		margin-bottom: 10px;
+		word-wrap: break-word ;
+		
+		
 		
 	}
+	
+
+	.titulo {
+	
+        @include text ;
+        a {
+            font-weight: 400;
+            color: #000;
+        }
+    }   
 }
 
 

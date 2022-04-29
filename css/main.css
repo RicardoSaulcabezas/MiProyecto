@@ -17,17 +17,27 @@ header, .articulo, .articulo.destacado, .sidebar, .contenedor .footer {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: flex; }
+    display: flex;
+    border-radius: 10px; }
+  * .contenedor-paisaje2 {
+    height: 25em;
+    margin-left: 4px;
+    border-radius: 5px; }
   * .tamaño-imagen {
-    width: 900px;
-    height: 400px;
-    text-align: center;
+    width: 800px;
+    height: 300px;
     margin: 10px auto;
+    margin-bottom: 100px;
     display: block;
-    border-radius: 40%; }
+    border-radius: 10px;
+    border-style: hidden;
+    border: #000090; }
+  * .container {
+    padding: 1em; }
   * .imagen3 {
     width: 25em;
-    height: 19em; }
+    height: 19em;
+    border-radius: 10px; }
   * .checkbtn {
     font-size: 30px;
     color: #fff;
@@ -75,8 +85,7 @@ body {
 
 li a.active, li a:hover {
   background: #000090;
-  transition: .5s;
-  padding: 7px; }
+  transition: .5s; }
 
 .contenedor {
   width: 90%;
@@ -86,9 +95,10 @@ li a.active, li a:hover {
   grid-gap: 1.25em;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, auto);
-  grid-template-areas: 'header			header   	header' 'destacado		destacado 	destacado' 'contenido		contenido 	aside' 'footer	 		footer 		footer'; }
+  grid-template-areas: 'header			header   	header' 'destacado		destacado 	destacado' 'contenido		contenido 	aside' 'footer	 		footer 		footer'; }
 
 .articulo {
+  border-radius: 10px;
   display: flex;
   background: #fff; }
   .articulo .contenedor-texto {
@@ -105,8 +115,11 @@ li a.active, li a:hover {
     font-size: 1.25em;
     font-weight: 300;
     text-align: start;
-    margin-bottom: 0.625rem; }
+    margin-bottom: 0.625rem;
+    display: block; }
     .articulo .titulo a {
+      background-color: #cecece;
+      border-radius: 10px;
       font-weight: 400;
       color: #000; }
 
@@ -114,6 +127,7 @@ li a.active, li a:hover {
   grid-area: destacado;
   color: #1d1b1b;
   background-color: #b0def1;
+  border-radius: 10px;
   display: grid;
   grid-template-columns: 1.3fr 1fr; }
 
@@ -142,6 +156,7 @@ li a.active, li a:hover {
 
 /*---------- SIDEBAR ----------*/
 .sidebar {
+  border-radius: 10px;
   padding: 5em 1.56em;
   text-align: center;
   min-height: 6.25rem;
@@ -183,13 +198,13 @@ li a.active, li a:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: flex; }
+  display: flex;
+  border-radius: 10px; }
   .contenedor-paisaje1:hover {
     background: rgba(0, 103, 123, 0.6); }
   .contenedor-paisaje1 a {
     position: relative;
     overflow: hidden;
-    box-shadow: 0px 1px 5px black;
     cursor: pointer; }
     .contenedor-paisaje1 a img {
       transition: all 500ms ease-out; }
@@ -197,7 +212,8 @@ li a.active, li a:hover {
       opacity: 1;
       visibility: visible; }
     .contenedor-paisaje1 a:hover img {
-      transform: scale(1.1); }
+      transform: scale(1.1);
+      border-radius: 10px; }
     .contenedor-paisaje1 a .capa {
       position: absolute;
       top: 0;
@@ -227,9 +243,15 @@ li a.active, li a:hover {
 
 .fondo {
   background-color: #b0def1; }
+  .fondo h2 {
+    background-color: #a3c4e6;
+    display: inline;
+    border-radius: 5px; }
   .fondo h3 {
-    font-size: 20px;
-    background-color: #acaafa; }
+    font-size: 22px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-align: center; }
   .fondo .extracto {
     font-size: 1.25em;
     font-weight: 300;
@@ -269,15 +291,18 @@ li a.active, li a:hover {
     width: 700px;
     height: 450px;
     margin: -60px;
-    margin-bottom: 0;
-    margin-top: 0; }
+    margin-bottom: 50px;
+    margin-top: 0;
+    border-radius: 15px; }
   .contenedor {
-    grid-template-areas: 'header			header   	header' 'destacado		destacado 	destacado' 'contenido		contenido 	contenido' 'aside			aside		aside' 'footer	 		footer 		footer'; }
+    grid-template-areas: 'header			header   	header' 'destacado		destacado 	destacado' 'contenido		contenido 	contenido' 'aside			aside		aside' 'footer	 		footer 		footer'; }
   .imagen3 {
     width: 23em;
     height: 19em; }
   .articulo.destacado {
     grid-template-columns: 1fr; }
+  .contenedor-paisaje1:hover {
+    background: none; }
   .contenedor-paisaje1 a:hover > img {
     transform: scale(1); }
   .contenedor-paisaje1 a:hover > .capa {
@@ -287,7 +312,11 @@ li a.active, li a:hover {
     padding-left: 15px; }
   nav ul li a {
     font-size: 16px;
-    margin-left: -18px; } }
+    margin-left: -18px; }
+  .contenedor-paisaje2 {
+    height: 25em;
+    margin-left: 4px;
+    border-radius: 5px; } }
 
 /* Large devices (desktops, 918px and up)*/
 @media (max-width: 918px) {
@@ -321,14 +350,17 @@ li a.active, li a:hover {
     margin: -60px;
     margin-bottom: 20px;
     margin-top: 0;
-    margin-left: -10px; }
+    margin-left: -10px;
+    border-radius: 15px; }
   .contenedor {
-    grid-template-areas: 'header			header   	header' 'destacado		destacado 	destacado' 'contenido		contenido 	contenido' 'aside			aside		aside' 'footer	 		footer 		footer'; }
+    grid-template-areas: 'header			header   	header' 'destacado		destacado 	destacado' 'contenido		contenido 	contenido' 'aside			aside		aside' 'footer	 		footer 		footer'; }
   .imagen3 {
     width: 20em;
     height: 19em; }
   .articulo.destacado {
     grid-template-columns: 1fr; }
+  .contenedor-paisaje1:hover {
+    background: none; }
   .contenedor-paisaje1 a:hover > img {
     transform: scale(1); }
   .contenedor-paisaje1 a:hover > .capa {
@@ -344,6 +376,11 @@ li a.active, li a:hover {
 @media (max-width: 768px) {
   body {
     font-size: 14px; }
+  .contenedor {
+    grid-template-areas: 'header			header   	header' 'destacado		destacado 	destacado' 'contenido		contenido 	contenido' 'aside			aside		aside' 'footer	 		footer 		footer'; }
+  .imagen3 {
+    width: 15em;
+    height: 15em; }
   .img-1 {
     width: 470px;
     height: 300px;
@@ -351,13 +388,10 @@ li a.active, li a:hover {
     margin-bottom: 20px;
     margin-top: 0;
     margin-left: -30px; }
-  .contenedor {
-    grid-template-areas: 'header			header   	header' 'destacado		destacado 	destacado' 'contenido		contenido 	contenido' 'aside			aside		aside' 'footer	 		footer 		footer'; }
-  .imagen3 {
-    width: 15em;
-    height: 15em; }
   .articulo.destacado {
     grid-template-columns: 1fr; }
+  .contenedor-paisaje1:hover {
+    background: none; }
   .contenedor-paisaje1 a:hover > img {
     transform: scale(1); }
   .contenedor-paisaje1 a:hover > .capa {
@@ -367,7 +401,11 @@ li a.active, li a:hover {
     padding-left: 15px; }
   nav ul li a {
     font-size: 16px;
-    margin-left: -18px; } }
+    margin-left: -18px; }
+  .contenedor-paisaje2 {
+    height: 25em;
+    margin-left: 4px;
+    border-radius: 5px; } }
 
 /* Small devices (landscape phones, 576px and up)*/
 @media (max-width: 576px) {
@@ -376,11 +414,16 @@ li a.active, li a:hover {
   .contenedor-paisaje1 {
     width: 30em;
     height: 20em;
-    margin-left: 60px;
+    overflow: hidden;
     display: block; }
-  .contenedor-paisaje2 {
-    width: 39em;
-    margin-left: 4px; }
+    .contenedor-paisaje1:hover {
+      background: none; }
+  .boton-bs {
+    margin-bottom: 40px; }
+  .boton-right {
+    margin: 0; }
+  .boton-left {
+    margin: 0; }
   .contenedor-paisaje1 a .capa {
     position: absolute;
     top: 0;
@@ -394,55 +437,49 @@ li a.active, li a:hover {
   .contenedor-paisaje1 a:hover > .capa {
     opacity: 1;
     visibility: hidden; }
-  .articulo.destacado {
-    padding-right: 37.5em;
-    padding-bottom: 10px;
-    margin-left: 20px; }
   .articulo .extracto {
     font-size: 1.25em;
     line-height: 1.5625rem;
     font-weight: 300;
-    color: #868b8d;
-    margin-right: 150px; }
-  .boton-right {
-    margin-right: 270px;
-    margin-bottom: 15px;
-    display: block; }
-  .boton-left {
-    margin-left: -10px;
-    margin-bottom: -3px;
-    display: block; }
-  .boton-bs {
-    display: block;
-    margin-left: 190px; }
+    color: #868b8d; }
   .articulo .contenedor-texto {
-    padding: 0em;
+    padding: 1em;
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-    margin-right: 0em;
     margin: 0;
     display: block; }
   .imagen3 {
-    height: 20em;
+    height: 19em;
     width: 15em;
     text-align: start;
     display: block;
-    margin: 0px; }
-  .articulo {
-    margin-left: -80px;
-    padding-right: -850px; }
+    margin: 0px;
+    padding: 0em; }
+  .img-1 {
+    width: 285px;
+    height: 200px;
+    text-align: justify;
+    margin: 0;
+    margin-right: 10px;
+    margin-left: 10px; }
+  .articulo.destacado {
+    grid-template-columns: 1fr;
+    margin-left: 10px; }
   .extracto-destacado {
     font-size: 1.25em;
-    line-height: 1.5625rem;
+    margin-right: 60px;
+    margin-left: 20px;
     font-weight: 300;
     color: #868b8d;
-    margin-left: 10px; }
-  .img-1 {
-    width: 30.5em;
-    height: 18em;
-    object-fit: cover;
-    display: flex;
-    margin-bottom: 10px; } }
+    word-wrap: break-word; }
+  .titulo {
+    font-size: 1.25em;
+    font-weight: 300;
+    text-align: start;
+    margin-bottom: 0.625rem; }
+    .titulo a {
+      font-weight: 400;
+      color: #000; } }
