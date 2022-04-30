@@ -118,8 +118,6 @@ li a.active, li a:hover {
     margin-bottom: 0.625rem;
     display: block; }
     .articulo .titulo a {
-      background-color: #cecece;
-      border-radius: 10px;
       font-weight: 400;
       color: #000; }
 
@@ -137,7 +135,8 @@ li a.active, li a:hover {
   text-align: start;
   margin-bottom: 0.625rem;
   line-height: 1.5625rem;
-  color: #868b8d; }
+  color: #868b8d;
+  overflow: hidden; }
 
 .destacado .titulo::after {
   content: '';
@@ -241,12 +240,20 @@ li a.active, li a:hover {
         max-width: 220px;
         margin: auto; }
 
+.subtitulo {
+  background-color: #b0def1;
+  display: inline;
+  padding: 10px;
+  display: block;
+  margin: 0; }
+
 .fondo {
   background-color: #b0def1; }
   .fondo h2 {
     background-color: #a3c4e6;
     display: inline;
-    border-radius: 5px; }
+    border-radius: 5px;
+    padding: 10px; }
   .fondo h3 {
     font-size: 22px;
     margin-top: 20px;
@@ -257,7 +264,8 @@ li a.active, li a:hover {
     font-weight: 300;
     color: #727779;
     margin-bottom: 50px;
-    text-align: center; }
+    text-align: center;
+    padding: 1em; }
   .fondo .titulo {
     font-size: 1.25em;
     font-weight: 300;
@@ -461,7 +469,6 @@ li a.active, li a:hover {
   .img-1 {
     width: 285px;
     height: 200px;
-    text-align: justify;
     margin: 0;
     margin-right: 10px;
     margin-left: 10px; }
@@ -469,12 +476,14 @@ li a.active, li a:hover {
     grid-template-columns: 1fr;
     margin-left: 10px; }
   .extracto-destacado {
-    font-size: 1.25em;
-    margin-right: 60px;
-    margin-left: 20px;
+    font-size: 1.50em;
+    margin-top: 0;
+    margin-right: 30px;
+    margin-left: 10px;
     font-weight: 300;
     color: #868b8d;
-    word-wrap: break-word; }
+    text-align: center;
+    max-width: 80%; }
   .titulo {
     font-size: 1.25em;
     font-weight: 300;
